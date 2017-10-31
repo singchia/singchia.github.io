@@ -1,6 +1,9 @@
 ---
 layout: post
 title: A scheduler for gorouties
+tags: 
+    - golang
+    - goroutines
 ---
 A simple scheduler for goroutines, **go-scheduler** helps to manage goroutines, only needs to set three optional quotas:  
 
