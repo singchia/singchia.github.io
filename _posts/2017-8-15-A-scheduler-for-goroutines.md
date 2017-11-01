@@ -5,6 +5,7 @@ tags:
     - golang
     - goroutines
 ---
+# A scheduler for goroutines
 A simple scheduler for goroutines, **go-scheduler** helps to manage goroutines, only needs to set three optional quotas:  
 
 * the maximum count of goroutines 
