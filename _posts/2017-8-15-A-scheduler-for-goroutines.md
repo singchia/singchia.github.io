@@ -19,7 +19,7 @@ Since scheduler manage goroutines to handle user's **_Request_** which contains 
 # How-to-use
 **go-scheduler** supplies several easy-understand and easy-integrate interfaces, Let's see a easy sample.  
 
-```go
+~~~
 import (
     "fmt"
     "sync/atomic"
@@ -29,10 +29,10 @@ import (
 
 func main() {
     sch := scheduler.NewScheduler()
-	
+    
     sch.SetMaxGoroutines(5000)
     sch.StartSchedule()
-	
+    
     var val int64
     for i := 0; i < 10*10000*10000; i++ {
         sch.PublishRequest(&scheduler.Request{Data: val, Handler: SchedulerHandler})
@@ -42,9 +42,9 @@ func main() {
     fmt.Printf("maxValue: %d\n", maxValue)
     sch.Close()
 }
-	
+    
 var maxValue int64 = 0
-	
+    
 func SchedulerHandler(data interface{}) {
     val, ok := data.(int64)
     if ok {
@@ -53,7 +53,7 @@ func SchedulerHandler(data interface{}) {
         }
     }
 }
-```  
+~~~
 
 It's not a good sample in production environment, but it do illustrate the usage  of **go-scheduler**. After **_SetMaxGoroutines(5000)_**, the max count of scheduler's goroutines shouldn't go beyond the range **_5000_**, use **_StartSchedule_** to start the scheduler, publish the **_Request_** into the scheduler by using **_PublishRequest_**, then scheduler will handle the request undercontrol.
 
