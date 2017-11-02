@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A scheduler for gorouties
+title: A scheduler for goroutines
 tags: 
     - golang
     - goroutines
