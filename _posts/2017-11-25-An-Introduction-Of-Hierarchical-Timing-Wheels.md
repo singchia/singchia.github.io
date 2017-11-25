@@ -23,7 +23,7 @@ I drew some easy-understand diagrams which are time ordered to describe the algo
 Let's name a fixed internal of time going-by as **ticking**, naming a pre-set-able event as **tick** which be called _**timer**_ in common, and  **timer** presents the algorithm. So let's start with the case with simple 2 wheels.  
 
 #### ticking 0
-Assuming wo got a clean enviroment and doing nothing at ticking 0.
+Assuming we got a clean enviroment and doing nothing at ticking 0.
 ![](/img/timingwheels/ticking0.jpg)
 
 #### ticking 1
@@ -31,7 +31,7 @@ Calculate 2 5-ticking-after ticks's positions in wheels respectively and insert 
 ![](/img/timingwheels/ticking1.jpg)
 
 #### ticking 6
-Since nothing special happened from ticking 1 to ticking 5, they've all omitted. At ticking 6, the **ticks** set in ticking 1 fired.
+Since nothing special happened from ticking 1 to ticking 5, they've all omitted. At ticking 6, the **ticks** set at ticking 1 fired.
 ![](/img/timingwheels/ticking6.jpg)
 
 #### ticking 7
@@ -43,7 +43,7 @@ This ticking is important because it illustrates what happened if a lower wheel'
 ![](/img/timingwheels/ticking8.jpg)
 
 #### ticking 24
-Two ticks set in ticking 8 fired, one of them ended and another one be set into lower wheel.
+Two ticks set at ticking 8 fired, one of them ended and another one be set into lower wheel.
 ![](/img/timingwheels/ticking24.jpg)
 
 #### ticking 27
@@ -51,7 +51,7 @@ The tick in wheel 0 fired.
 ![](/img/timingwheels/ticking27.jpg)
 
 #### ticking 56
-The last tick set in ticking 7 fired and be set into lower wheel.
+The last tick set at ticking 7 fired and be set into lower wheel.
 ![](/img/timingwheels/ticking56.jpg)
 
 #### ticking 63
