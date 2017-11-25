@@ -18,7 +18,7 @@ Since scheduler manage goroutines to handle user's **_Request_** which contains 
 **note:**  three optional quotas are only undercontrolled in **go-scheduler**
 
 # How-to-use
-**go-scheduler** supplies several easy-understand and easy-integrate interfaces, Let's see a easy sample.  
+**go-scheduler** supplies several easy-understand and easy-integrate interfaces, Let's see an easy sample.  
 
 ~~~
 import (
@@ -100,4 +100,4 @@ if all quotas < max quotas then expand randFloat * incomingReqs / (incomingReqs 
 ```
 
 #### other strategies
-In scheduler file, a circularLink.go exists, I was trying to looking for next goroutines-updating using history status, but temporarily not a idea came up, if you have some idea welcome to contact me.
+In scheduler file, a circularLink.go exists, I was trying to looking for next goroutines-updating using history status, but temporarily not an idea came up, if you have some idea welcome to contact me.

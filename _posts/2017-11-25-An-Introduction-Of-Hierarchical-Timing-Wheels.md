@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Introduction Of Hierarchical Timing Wheels
+title: An Introduction Of Hierarchical Timing Wheels
 header-img: "img/timer.jpg"
 tags: 
     - timingwheel
@@ -8,19 +8,19 @@ tags:
     - high-performance
 ---
 
-Timer is a so important component be needed in many projects to limit a action or to trigger a event, we used to start a thread or coroutine to implement one for rapid development. But some of you may encountered the scenario that requires lot of timers, like developing a restful server or a message server, then a high-performance timer is strongly needed. we got serveral options to choose:
+Timer is a so important component be needed in many projects to limit a action or to trigger an event, we used to start a thread or coroutine to implement one for rapid development. But some of you may encountered the scenario that requires lot of timers, like developing a restful server or a message server, then a high-performance timer is strongly needed. we got serveral options to choose:
 
 *	Ordered Linked Timer List
 * 	Heap Based Timer
 *	Hashed Timing Wheels
 *	Hierarchical Timing Wheels
 
-And this documentation illustrates hierarchical timing wheels algorithm and a implemention of it.
+And this documentation illustrates hierarchical timing wheels algorithm and an implemention of it.
 
 ## Algorithm
 
 I drew some easy-understand diagrams which are time ordered to describe the algorithm, and some corresponding comments had been written next to the graphic content.  
-Let's name a fixed internal of time going-by as **ticking**, name a pre-set-able event as **tick** which be called _**timer**_ in common, and  **timer** presents the algorithm. So let's start with the case with simple 2 wheels.  
+Let's name a fixed internal of time going-by as **ticking**, naming a pre-set-able event as **tick** which be called _**timer**_ in common, and  **timer** presents the algorithm. So let's start with the case with simple 2 wheels.  
 
 #### ticking 0
 Assuming wo got a clean enviroment and doing nothing at ticking 0.
