@@ -1,12 +1,13 @@
 ---
 layout: post
-title: A scheduler for goroutines
+title: A Scheduler For Goroutines
+header-img: "img/scheduler.jpg"
 tags: 
     - golang
     - goroutines
 ---
-# A scheduler for goroutines
-A simple scheduler for goroutines, **go-scheduler** helps to manage goroutines, only needs to set three optional quotas:  
+
+This document is for project [go-scheduler](https://github.com/singchia/go-scheduler), **go-scheduler** helps to manage goroutines, only needs to set three optional quotas:  
 
 * the maximum count of goroutines 
 * the maximum count of processed requests per interval 
