@@ -39,7 +39,7 @@ Add another 3 **ticks** into timer.
 ![](/img/timingwheels/ticking7.jpg)
 
 #### ticking 8 
-This ticking is important because it illustrates what happened if a lower wheel's ticking rotated back at position 0, this will raise the higher wheel ticking.
+This ticking is important because it illustrates what happened when a lower wheel's ticking rotated back at position 0, and this, will raise the ticking of higher wheel.
 ![](/img/timingwheels/ticking8.jpg)
 
 #### ticking 24
