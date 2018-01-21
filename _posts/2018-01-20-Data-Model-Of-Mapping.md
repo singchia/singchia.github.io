@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 「映射」的数据模型设计
+title: 关于「映射」的数据模型设计
 header-img: "img/mapping/mapping.png"
 tags: 
     - mapping
