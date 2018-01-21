@@ -36,7 +36,7 @@ tags:
 	type b request -> Destination 2
 	type c request -> Destination 3  
 
-问题是我们发现```目标1```来不及处理请求，在重新操作映射时只能遍历整个映射表以免漏掉需要改变的映射，只因为根据目标找不到请求类型。如果加上目标到请求类型的映射，就会变成：
+问题是我们发现改变现有映射，在重新操作时只能遍历整个映射表以免漏掉需要改变的映射，只因为根据目标找不到请求类型。如果加上目标到请求类型的映射，就会变成：
 
 	type a request -> Destination 1'0, 1'1
 	type b request -> Destination 2'0
