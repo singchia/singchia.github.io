@@ -1,4 +1,13 @@
-# 「映射」的数据模型设计
+---
+layout: post
+title: 「映射」的数据模型设计
+header-img: "img/mapping/mapping.png"
+tags: 
+    - mapping
+    - redis
+    - design
+---
+
 ## 1. 背景
 在做Faas项目的时候，遇到这样的架构设计需求。
 
