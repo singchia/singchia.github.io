@@ -15,7 +15,9 @@ And few other related stuff would also be involved.
 
 ## Use Case Illustration
 
-I wrote a **echo-server** as the use case to illustrate the patterns, it simply return **server-ip:server-port** and **what client send**.
+I wrote serveral **echo-server** as the use case to illustrate the patterns, it simply return **server-ip:server-port** and **what client send**.  
+
+Note that those snippets should not be used in production environment, cause I really didn't do enough tests.
 
 
 ## Unlimited Concurrency
@@ -27,4 +29,6 @@ Let's step into the first pattern:
 
 ![](/Users/zhaizenghui/singchia.github.io/img/concurrency/unlimited-golang.png)
 
+It's a really easy sample, just start a new goroutine to handle a new incoming connection. You can copy codes [here](https://gist.github.com/singchia/baac98c0f1a76851ac6b7ddd3a01c21f) for your own tests.
 
+## Limited Concurrency
