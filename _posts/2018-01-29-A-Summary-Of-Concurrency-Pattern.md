@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Summary Of Concurrency Pattern
+title: A Summary Of Concurrency Pattern
 header-img: "img/concurrency/concurrency.png"
 tags: 
     - concurrency-pattern
