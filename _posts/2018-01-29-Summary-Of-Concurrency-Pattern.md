@@ -40,7 +40,7 @@ Since goroutines are lighter and the amount is larger, if goroutines can be mani
 
 Let's step into the first pattern: 
 
-![](./img/concurrency/unlimited-golang.png)
+![](/img/concurrency/unlimited-golang.png)
 
 It's a really easy snippet, just start a new goroutine to handle a new incoming connection. You can get codes [here](https://gist.github.com/singchia/baac98c0f1a76851ac6b7ddd3a01c21f).
 
@@ -54,8 +54,8 @@ Before reading the snippet below, you may would want to get the dependency:
 	
 It's just a **circular linker** for saving connections in this example.  
 
-![](./img/concurrency/limited-golang1.png)
-![](./img/concurrency/limited-golang2.png)  
+![](/img/concurrency/limited-golang1.png)
+![](/img/concurrency/limited-golang2.png)  
 
 The snippet keeps every incoming connection into a circular linker, and 100 goroutines check if any connection got data with ```net.Conn.Read()```iteratively.  
 
@@ -69,9 +69,9 @@ Sometimes I want adjust the amount of routines at runtime rather than keeping us
 
 The snippet below takes standard input to allow user expand or shrink routines, in your case, you can use some strategy like **request-handle-rate-based-adjustment** to replace **standard-input-adjustment**, but in our example, we gotta stay that way.  
 
-![](./img/concurrency/elastic-golang1.png)
-![](./img/concurrency/elastic-golang2.png)
-![](./img/concurrency/elastic-golang3.png)  
+![](/img/concurrency/elastic-golang1.png)
+![](/img/concurrency/elastic-golang2.png)
+![](/img/concurrency/elastic-golang3.png)  
 
 The first goroutine in ```main``` function is responsible for deleting closed connection and dispatch connections to worker goroutines, the second one accepts connections and add into map.  
 
