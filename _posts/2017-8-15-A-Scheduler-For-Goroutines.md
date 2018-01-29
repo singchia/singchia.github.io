@@ -1,7 +1,7 @@
 ---
 layout: post
 title: A Scheduler For Goroutines
-header-img: "img/scheduler.jpg"
+header-img: "img/scheduler/scheduler.png"
 tags: 
     - golang
     - goroutines

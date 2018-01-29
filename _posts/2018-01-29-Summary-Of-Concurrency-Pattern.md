@@ -1,3 +1,14 @@
+---
+layout: post
+title: Summary Of Concurrency Pattern
+header-img: "img/concurrency/concurrency.png"
+tags: 
+    - concurrency-pattern
+    - golang
+    - goroutine
+---
+
+
 ## Background
 
 This post illustrates several types of concurrency patterns which are most used in my work environment. It's all about how to use and control routines, those may exist as goroutines in golang or threads in c/c++.   

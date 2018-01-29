@@ -1,7 +1,7 @@
 ---
 layout: post
 title: An Introduction Of Hierarchical Timing Wheels
-header-img: "img/timer.jpg"
+header-img: "img/timer/timer.png"
 tags: 
     - timingwheel
     - algorithms-datastructures
