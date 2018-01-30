@@ -82,7 +82,7 @@ You can get code [here](https://gist.github.com/singchia/9b45bd1a2cb4241c4b9aa8b
 
 ## Precise Concurrency
 
-Since goroutines or threads are stateless, we can combine them with some certain resources for precise control.  
+Since goroutines and threads are stateless, we can combine them with some certain resources for precise control.  
 
 My thought in golang is to generate a new channel for a new goroutine, then use this channel represents and control this goroutine.   
 
