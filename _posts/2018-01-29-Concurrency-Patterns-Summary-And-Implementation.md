@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Concurrency Patterns: Summary And Implementation
+title: "Concurrency Patterns: Summary And Implementation"
 header-img: "img/concurrency/concurrency.png"
 tags: 
     - concurrency-patterns
