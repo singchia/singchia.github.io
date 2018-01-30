@@ -27,7 +27,7 @@ And few other related stuff would also be involved.
 
 ## Use Case Illustration
 
-I wrote serveral **echo-server** which simply return **server-ip:server-port** and **what client send** as the use case to illustrate the patterns .  
+I wrote serveral **echo-server**s which simply return **"server-ip:server-port what-client-send"** as the use case to illustrate the patterns .  
 
 You can copy those codes into your workspace, run the server and using **telnet** or **netcat** to connect it and test it.
 
