@@ -12,9 +12,9 @@ tags:
 
 ## Background
 
-This post illustrates several types of concurrency patterns which are most used in my work environment. It's all about how to use and control routines, those may exist as goroutines in golang or threads in c/c++.   
+This post illustrates several types of concurrency patterns which are most used in my work environment. It's all about how to use and control routines which may exist as goroutines in golang or threads in c/c++.   
 
-You may want to keep a operation from blocking the whole system, to limit routines within a certain amount, or even control them more precisely.   
+You may want to keep a operation from blocking the whole system. To limit routines within a certain amount, or even control them more precisely.   
 
 Here are rough classifications of patterns:
 
