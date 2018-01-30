@@ -86,6 +86,6 @@ Since goroutines or threads are stateless, we can combine them with some certain
 
 My thought in golang is to generate a new channel for a new goroutine, then use this channel represents and control this goroutine.   
 
-Other thing directly related to goroutine is **goroutine id**, so as thread, but it's really deprecated using **goroutine id** in production environment.
+Other thing directly related to goroutine is **goroutine id**, so as thread, but it's deprecated that using **goroutine id** in production environment.
 
 This can be used in some scenarios like binding **mysql instance**, **file descriptor** to some certain goroutines or threads.
