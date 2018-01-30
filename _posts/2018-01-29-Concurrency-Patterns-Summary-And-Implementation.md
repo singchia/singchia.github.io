@@ -1,9 +1,9 @@
 ---
 layout: post
-title: A Summary Of Concurrency Pattern
+title: Concurrency Patterns: Summary And Implementation
 header-img: "img/concurrency/concurrency.png"
 tags: 
-    - concurrency-pattern
+    - concurrency-patterns
     - golang
     - goroutines
     - threads
