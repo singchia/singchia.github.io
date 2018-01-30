@@ -68,7 +68,7 @@ Note that it's not a good design, because I'm using shared memory insteading of 
 
 Sometimes I want to adjust the amount of routines at runtime rather than keeping using initial number at start time which may be too small or too big as the system goes.  
 
-The snippet below takes standard input to allow user expand or shrink routines, in your case, you can use some strategy like **request-handle-rate-based-adjustment** to replace **standard-input-adjustment**, but in our example, we gotta stay that way.  
+The snippet below takes standard input to allow user expand or shrink routines, in your case, you can use some strategies like **request-handle-rate-based-adjustment** to replace **standard-input-adjustment**, but in our example, we gotta stay that way.  
 
 ![](/img/concurrency/elastic-golang1.png)
 ![](/img/concurrency/elastic-golang2.png)
