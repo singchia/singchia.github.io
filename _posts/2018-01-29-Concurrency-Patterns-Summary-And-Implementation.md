@@ -56,7 +56,7 @@ func main() {
     flag.Parse()
 
     l, err := net.Listen("tcp", addr)
-    if err != nil {
+    if err != nil { 
         os.Exit(1)
     }
     defer l.Close()
@@ -70,7 +70,7 @@ func main() {
             buf := make([]byte, 1024)
             for {
                 len, err := conn.Read(buf)
-                if err != nil {
+                if err != nil { 
                     conn.Close()
                     return
                 }
@@ -136,8 +136,7 @@ func main() {
 				if ok && E.Timeout() {
 					continue
 				}
-				if err != nil {  
-				
+				if err != nil { 	
 					conn.Close()
 					cl.Delete(connMap[conn])
 					delete(connMap, conn)
@@ -236,8 +235,7 @@ func main() {
 	for {
 		var i int
 		_, err := fmt.Scanf("%d", &i)
-		if err != nil {  
-		
+		if err != nil { 
 			fmt.Println("please input an integer", err.Error())
 			continue
 		}
