@@ -136,8 +136,8 @@ func main() {
 				if ok && E.Timeout() {
 					continue
 				}
-				if err != nil { 	
-					conn.Close()
+				if err != nil {
+                    conn.Close()
 					cl.Delete(connMap[conn])
 					delete(connMap, conn)
 					continue
@@ -223,8 +223,7 @@ func main() {
 		for {
 			conn, err := l.Accept()
 			if err != nil {  
-			
-				os.Exit(1)
+                os.Exit(1)
 			}
 			mutex.Lock()
 			connMap[conn] = true
@@ -236,7 +235,7 @@ func main() {
 		var i int
 		_, err := fmt.Scanf("%d", &i)
 		if err != nil { 
-			fmt.Println("please input an integer", err.Error())
+            fmt.Println("please input an integer", err.Error())
 			continue
 		}
 		if i <= 0 {
