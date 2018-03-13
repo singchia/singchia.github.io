@@ -1,14 +1,14 @@
 ## Personal
-翟增辉
-Sing Chia
-Hefei, China, 230000
-+86 15695692251
-singchia.com
-github.com/singchia
-singchia@163.com/singchia1202@gmail.com
+翟增辉  
+Sing Chia  
+Hefei, China, 230000  
++86 15695692251  
+singchia.com  
+github.com/singchia  
+singchia@163.com/singchia1202@gmail.com  
 
 ## Profile
-      Software engineer with 2.5+ years of cloud-compute work experience including Paas, Faas and Iaas. Built and designed several mircoservice architectures and a serverless architecture. Familiar with service, architectures, linux, network, protocol, distributed systems and some open source components. Proficient with golang, c, c++, bash, nodejs and .net.
+Software engineer with 2.5+ years of cloud-compute work experience including Paas, Faas and Iaas. Built and designed several mircoservice architectures and a serverless architecture. Familiar with service, architectures, linux, network, protocol, distributed systems and some open source components. Proficient with golang, c, c++, bash, nodejs and .net.
 
 
 ## Professional Experience
