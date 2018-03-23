@@ -8,6 +8,7 @@ tags:
     - high-performance
 ---
 
+## Background
 Timer is a so important component be needed in many projects to limit a action or to trigger an event, we used to start a thread or coroutine to implement one for rapid development. But some of you may encountered the scenario that requires lot of timers, like developing a restful server or a message server, then a high-performance timer is strongly needed. we got serveral options to choose:
 
 *	Ordered Linked Timer List
