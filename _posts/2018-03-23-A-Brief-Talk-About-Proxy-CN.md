@@ -280,8 +280,8 @@ tags:
 
 	> sysctl -w net.ipv4.ip_forward=1 #允许内核站转发数据包，临时生效
 	> sysctl -w net.ipv4.conf.eth1.proxy_arp=1 #允许内网网卡转发arp
-	> iptables -t nat -A PREROUTING -i veth1 -p tcp --dport 1202 -j DNAT --to-destination 172.16.0.10:1202
-	> iptables -t nat -A POSTROUTING -o veth1 -j SNAT -s 172.16.0.10 --to-source 220.220.0.10
+	> iptables -t nat -A PREROUTING -i eth0 -p tcp --dport 1202 -j DNAT --to-destination 172.16.0.10:1202
+	> iptables -t nat -A POSTROUTING -o eth0 -j SNAT -s 172.16.0.10 --to-source 220.220.0.10
 	
 在主机```A```上连接```B:1202```端口并发送```hello```：
 
