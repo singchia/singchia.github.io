@@ -316,7 +316,7 @@ tags:
 
 ```LVS(linux virtual server)```是[章文嵩](https://baike.baidu.com/item/%E7%AB%A0%E6%96%87%E5%B5%A9)早年开发的负载均衡器，依赖于```netfilter```，所以其在内核态也需要跑一个模块，叫```ip_vs```，同样的，如果你的linux内核版本高于```2.4.x```，那么：
 
-	> lsmod ip_vs
+	> modinfo ip_vs
 	
 是能够找到这个内核模块的，如果没有安装，请使用```insmod```来安装刚刚找到的模块。
 
