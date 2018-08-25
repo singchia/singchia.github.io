@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Concurrency Patterns: Summary And Implementation"
-header-img: "img/concurrency/concurrency.png"
+header-img: "img/concurrency/concurrency.jpeg"
 tags: 
     - concurrency-patterns
     - golang
@@ -10,7 +10,7 @@ tags:
 ---
 
 
-## Background
+## 1. Background
 
 This post illustrates several types of concurrency patterns which are most used in my work environment. It's all about how to use and control routines which may exist as goroutines in golang or threads in c/c++.   
 
@@ -25,7 +25,7 @@ Here are rough classifications of patterns:
 
 And few other related stuff would also be involved.
 
-## Use Case Illustration
+## 2. Use Case Illustration
 
 I wrote serveral **echo-server**s which simply return **"server-ip:server-port what-client-send"** as the use case to illustrate the patterns .  
 
@@ -34,7 +34,7 @@ You can copy those codes into your workspace, run the server and using **telnet*
 **Note that those snippets should not be used in production environment, since I really didn't do enough tests.**
 
 
-## Unlimited Concurrency
+## 3. Unlimited Concurrency
 
 
 Since goroutines are lighter and the amount is larger, if goroutines can be manipulated well, so will c threads.  
@@ -83,7 +83,7 @@ func main() {
 
 It's a really easy snippet, just starts a new goroutine to handle a new incoming connection. You can also get codes [here](https://gist.github.com/singchia/baac98c0f1a76851ac6b7ddd3a01c21f).
 
-## Limited Concurrency
+## 4. Limited Concurrency
 
 The original thought about limited concurrency is using certain routines to handle some common events with **signals** or **messages** or **shared memory**.  
 
@@ -290,7 +290,7 @@ Then the ```main``` function continuously takes standard input to expand or shri
 
 You can also get code [here](https://gist.github.com/singchia/9b45bd1a2cb4241c4b9aa8b850f17205), and I personally implemented [one](https://github.com/singchia/go-scheduler).
 
-## Precise Concurrency
+## 5. Precise Concurrency
 
 Since goroutines and threads are stateless, we can combine them with some certain resources for precise control.  
 
